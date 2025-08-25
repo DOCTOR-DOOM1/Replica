@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Replica's Project</title>
+  <!-- favicon removed per request -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="left">
+  <img src="hii.svg" alt="Profile" class="profile left-profile" />
+  <img src="favicon5.svg" class="header-dot crystal" alt="status" />
+  <span class="project-name">Replica's Project</span>
+  <span class="tag">Hobby</span>
+  <img src="up-down-arrow.svg" alt="toggle" class="tag-arrow" />
+    </div>
+    <div class="right">
+      <div class="header-find">
+        <input type="search" placeholder="Find previews, deployments..." aria-label="Find" />
+        <button class="header-feedback" aria-label="Feedback">
+          <span>Feedback</span>
+        </button>
+      </div>
+      <img src="bell-icon.svg" alt="Notifications" class="icon" />
+  <img src="book.svg" alt="Docs" class="icon book" />
+  <img src="favicon5.svg" class="header-dot-right crystal" alt="status" />
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav class="navbar">
+    <a href="#">Overview</a>
+    <a href="#">Integrations</a>
+    <a href="#">Deployments</a>
+    <a href="#">Activity</a>
+    <a href="#">Domains</a>
+    <a href="#">Usage</a>
+    <a href="#">Observability</a>
+    <a href="#">Storage</a>
+    <a href="#">Flags</a>
+    <a href="#">AI Gateway</a>
+    <a href="#">Support</a>
+    <a href="#">Settings</a>
+  </nav>
+
+  <!-- Sub-toolbar: search + action buttons (matches Replica.png) -->
+  <div class="sub-toolbar">
+    <div class="sub-search">
+      <div class="search-with-icon">
+  <img src="search-icon.svg" class="search-left-icon" alt="search" />
+        <input type="search" placeholder="Search projects, previews, domains..." aria-label="Toolbar search" />
+      </div>
+    </div>
+
+    <div class="sub-actions" role="toolbar" aria-label="Page actions">
+      <button class="sub-btn icon-only" title="Preview">
+        <img src="search-icon.svg" alt="Search" />
+      </button>
+
+      <button class="sub-btn icon-only combo" title="Views">
+        <img src="grid-icon.svg" alt="Grid" />
+        <img src="hamburger.svg" alt="Menu" />
+      </button>
+
+      <button class="sub-btn add-btn" title="Add new">
+        <span>Add new</span>
+        <img src="down-arrow.svg" alt="open" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <main class="overview">
+  <div class="left-column">
+  <!-- Usage -->
+  <section class="usage">
+      <h2>Usage</h2>
+      <div class="usage-card">
+        <div class="usage-header">
+          <p><strong>Last 30 days</strong><br>Updated 11m ago</p>
+          <button class="upgrade">Upgrade</button>
+        </div>
+
+        <ul class="usage-list">
+          <li>
+            <img src="Progress-circle.png" class="usage-icon" alt="Progress" />
+            <span>Data Transfer        —     773.59 MB / 100 GB</span>
+            
+          </li>
+          <li>
+            <img src="Progress-circle.png" class="usage-icon" alt="Progress" />
+            <span>Edge Requests        —     6.6K / 1M</span>
+            
+          </li>
+          <li>
+            <img src="Progress-circle.png" class="usage-icon" alt="Progress" />
+            <span>Edge Request CPU Duration       —     0s / 1h</span>
+            
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Recent Previews (moved under Usage) -->
+
+    <section class="previews">
+      <h2>Recent Previews</h2>
+      <div class="empty-box">
+        <p>Preview deployments that you have recently visited or created will appear here.</p>
+      </div>
+    </section>
+
+    </div>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <img src="favicon1.svg" class="proj-icon" alt="Spark Logo" />
+        <div class="project-info">
+          <span class="proj-title">spark-2-k25-2-k26</span>
+          <p class="proj-sub"><a href="https://spark-2k25.vercel.app" target="_blank"><img src="github.svg" class="repo-icon" alt="GitHub" />Replica/Spark-2K25---2K26</a></p>
+          <p class="proj-desc">Added README.md<br><span class="date">Aug 20 on main</span></p>
+        </div>
+        <div class="project-actions">
+          <button class="proj-btn heart" title="Favorite"><img src="heart-beart.svg" alt="favorite" /></button>
+          <button class="proj-btn more" title="More">⋯</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="favicon2.png" class="proj-icon" alt="Jovian Logo" />
+        <div class="project-info">
+          <span class="proj-title">jovian-responsive-page</span>
+          <p class="proj-sub"><a href="https://jovian-responsive-page.vercel.app" target="_blank"><img src="github.svg" class="repo-icon" alt="GitHub" />Replica/jovian-responsive-page</a></p>
+          <p class="proj-desc">fixed a mistake<br><span class="date">6/27/24 on main</span></p>
+        </div>
+        <div class="project-actions">
+          <button class="proj-btn heart" title="Favorite"><img src="heart-beart.svg" alt="favorite" /></button>
+          <button class="proj-btn more" title="More">⋯</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="favicon3.png" class="proj-icon" alt="Profile Logo" />
+        <div class="project-info">
+          <span class="proj-title">profile</span>
+          <p class="proj-sub"><a href="https://profile.vercel.app" target="_blank"><img src="github.svg" class="repo-icon" alt="GitHub" />Replica/profile</a></p>
+          <p class="proj-desc">initial commit<br><span class="date">5/14/24 on main</span></p>
+        </div>
+        <div class="project-actions">
+          <button class="proj-btn heart" title="Favorite"><img src="heart-beart.svg" alt="favorite" /></button>
+          <button class="proj-btn more" title="More">⋯</button>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+</body>
+</html>
